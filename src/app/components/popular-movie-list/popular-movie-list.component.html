@@ -1,0 +1,7 @@
+<h1>Lista: Os 10 Filmes Populares no Brasil</h1>
+<ul>
+  <li *ngFor="let movie of movies">
+    <span>{{ movie.title }}</span>
+    <button (click)="likeMovie(movie)">Curtir</button>
+  </li>
+</ul>

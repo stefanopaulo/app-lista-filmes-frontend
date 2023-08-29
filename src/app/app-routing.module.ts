@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'popular-movies' },
   {
     path: 'popular-movies',
-    //loadChildren: () => import('./popular-movies/popular-movies.module').then(m => m.PopularMoviesModule)
+    loadChildren: () => import('./popular-movies/popular-movies.module').then(m => m.PopularMoviesModule)
   }
 ];
 

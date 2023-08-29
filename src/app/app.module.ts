@@ -6,13 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PopularMovieListComponent } from './components/popular-movie-list/popular-movie-list.component';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PopularMovieListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

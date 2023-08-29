@@ -1,1 +1,31 @@
-<p>popular-movies works!</p>
+<mat-card>
+  <mat-toolbar color="primary">Lista dos 10 filmes mais populares no Brasil</mat-toolbar>
+
+  <div *ngFor="let movie of movies">
+    <div>
+      <h3>{{ movie.title }}</h3>
+
+      <mat-list>
+        <mat-list-item>
+          <span matListItemTitle>Sinopse</span>
+          <span matListItemLine>{{ movie.overview }}</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span matListItemTitle>Data de Lançamento: </span>
+          <span matListItemLine>{{ movie.release_date }}</span>
+        </mat-list-item>
+        <mat-list-item>
+          <span matListItemTitle>Avaliação: </span>
+          <span matListItemLine>{{ movie.vote_average }}</span>
+        </mat-list-item>
+      </mat-list>
+
+      <div class="example-button-row">
+        <button mat-fab extended color="primary">
+          <mat-icon>thumb_up</mat-icon>
+          Curtir
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-card>
